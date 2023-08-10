@@ -1,0 +1,22 @@
+body {
+  background-color: #50535c;
+  background-image: url('./IMG/banner01.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 28px;
+  color: white; 
+  text-align: center; 
+}
+
+.concordancia {
+  color: #e6e6e4;
+}
+
+.jorge-luis-borges {
+  color: #aaaaaa;
+}
+

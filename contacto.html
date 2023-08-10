@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Concordancia Jorge Luis Borges</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ico.png" type="png" sizes="128px">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <body style="background-color: #50535c;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #50535c">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="./index.html">Home</a>
+            <a class="nav-item nav-link active" href="./concordancia.html">Concordancia</a>
+            <a class="nav-item nav-link disabled" href="#">Contacto</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="bg-image d-flex flex-column justify-content-center align-items-center"
+    style="background-image: url('./IMG/banner02.jpg'); height: 100vh; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+<section class="mb-4">
+        <h2 class="h1-responsive font-weight-bold text-white my-4" >Contactanos</h2>
+    <p class="text-left w-responsive mx-auto text-white mb-5">Si tenés alguna pregunta o querés reportar algún error, por favor, completá el formulario y contanos.
+        <br> Con tu sugerencia nos ayudás a perfeccionar el buscador. ¡Muchas gracias!</p>
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="text-white">Nombre</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="text-white">Mail</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="text-white">Contanos el motivo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message" class="text-white">Dejanos tu mensaje</label>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            <div class="text-left text-md-left">
+                <a class="btn btn-outline-secondary mt-3" style="background-color: #28739d;" onclick="validateForm();">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <div class="col-md-3 text-left">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p class="text-white">Biblioteca Nacional, Argentina</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p class="text-white">+541131291019</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p class="text-white">concordancia@bn.gob.ar</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+</section>
+ <script src="./mail.js"></script>
+    <footer class="text-center fixed-bottom" style="background-color: #50535c; color: white;">
+      <p>Version Beta 1.0.3 2023</p>
+    </footer>
+  </body>
+</html>
